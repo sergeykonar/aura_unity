@@ -16,6 +16,7 @@ The app uses AlarmManager to schedule activity at exect time
 
 TODO:
 Test on different devices from different manufacturers
+
 Improve UI
 
 
