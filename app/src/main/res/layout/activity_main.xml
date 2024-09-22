@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView to display boot events or no boots detected -->
+    <TextView
+        android:id="@+id/boot_event_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No boots detected"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <!-- RecyclerView to show boot events -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/boot_events_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+    <!-- EditText to input total dismissals allowed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total dismissals allowed" />
+
+    <EditText
+        android:id="@+id/edit_total_dismissals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter total dismissals allowed"/>
+
+    <!-- EditText to input interval between dismissals -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interval between dismissals (minutes)" />
+
+    <EditText
+        android:id="@+id/edit_dismissal_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter interval between dismissals"/>
+
+    <!-- Button to update dismissals settings -->
+    <Button
+        android:id="@+id/button_update_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Settings"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
